@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 17:44:23 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/29 18:31:50 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/29 19:40:02 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ public:
 	ScavTrap &	operator=( ScavTrap const & rhs );
 
 	void	guardGate( void ) const;
+
+	void	attack( const std::string & target );
 
 };
 

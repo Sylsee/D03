@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 17:44:23 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/29 18:42:29 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/29 19:47:36 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,18 @@ FragTrap &	FragTrap::operator=( FragTrap const & src )
 
 void	FragTrap::highFivesGuys( void ) const
 {
-	std::cout << "FragTrap " << this->_name << " :\"Hey high fives guys !!!\"" << std::endl;
+	std::cout << "FragTrap " << this->_name << " : \"Hey high fives guys !!!\"" << std::endl;
+}
+
+void	FragTrap::attack( const std::string& target )
+{
+	if (this->_energyPoints > 0 && this->_hitPoints > 0) {
+
+		std::cout << "FragTrap " << this->_name << " attacks " << target
+			<< ", causing " << this->_attackDamage << " points of damage!" << std::endl;
+
+		this->_energyPoints -= 1;
+	}
+	else
+		std::cout << "FragTrap " << this->_name << " canno't do nothing..." << std::endl;
 }

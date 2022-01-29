@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 17:44:23 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/29 18:44:40 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/01/29 19:43:41 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ public:
 	FragTrap &	operator=( FragTrap const & rhs );
 
 	void	highFivesGuys( void ) const;
+
+	void	attack( const std::string & target );
 
 };
 
