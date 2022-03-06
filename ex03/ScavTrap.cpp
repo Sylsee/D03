@@ -12,6 +12,7 @@
 
 #include "ScavTrap.hpp"
 
+
 ScavTrap::ScavTrap( void ) : ClapTrap()
 {
 	std::cout << "ScavTrap constructor called: " << this->_name << std::endl;
@@ -77,3 +78,5 @@ void	ScavTrap::attack( const std::string& target )
 	else
 		std::cout << "ScavTrap " << this->_name << " canno't do nothing..." << std::endl;
 }
+
+int const ScavTrap::h3ll0Th3C0rr3ct0r = 50;

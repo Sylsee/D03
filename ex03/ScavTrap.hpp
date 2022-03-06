@@ -18,6 +18,10 @@
 
 class ScavTrap : virtual public ClapTrap
 {
+protected:
+
+	static int const	h3ll0Th3C0rr3ct0r;
+
 public:
 
 	ScavTrap( void );
