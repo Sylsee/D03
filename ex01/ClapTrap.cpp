@@ -6,7 +6,7 @@
 /*   By: spoliart <spoliart@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 16:37:51 by spoliart          #+#    #+#             */
-/*   Updated: 2022/01/29 18:32:51 by spoliart         ###   ########.fr       */
+/*   Updated: 2022/03/09 12:03:12 by spoliart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ ClapTrap::ClapTrap( void ) :
 	_attackDamage(0)
 {
 	std::cout << "ClapTrap constructor called: " << this->_name << std::endl;
-
-	return ;
 }
 
 ClapTrap::ClapTrap( ClapTrap const & src ) :
@@ -30,8 +28,6 @@ ClapTrap::ClapTrap( ClapTrap const & src ) :
 	_attackDamage(src.getAttackDamage())
 {
 	std::cout << "ClapTrap constructor called: " << src._name << std::endl;
-
-	return ;
 }
 
 ClapTrap::ClapTrap( std::string name ) :
@@ -41,15 +37,11 @@ ClapTrap::ClapTrap( std::string name ) :
 	_attackDamage(0)
 {
 	std::cout << "ClapTrap constructor called: " << name << std::endl;
-
-	return ;
 }
 
 ClapTrap::~ClapTrap( void )
 {
 	std::cout << "ClapTrap destructor called: " << this->_name << std::endl;
-
-	return ;
 }
 
 ClapTrap &	ClapTrap::operator=( ClapTrap const & rhs )
